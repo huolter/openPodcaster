@@ -1,0 +1,126 @@
+Introducing OpenAI o1-preview
+A new series of reasoning models for solving hard problems. Available now.
+
+Update on September 17, 2024: Rate limits are now 50 queries per week for o1-preview and 50 queries per day for o1-mini.
+
+We've developed a new series of AI models designed to spend more time thinking before they respond. They can reason through complex tasks and solve harder problems than previous models in science, coding, and math.
+
+Today, we are releasing the first of this series in ChatGPT and our API. This is a preview and we expect regular updates and improvements. Alongside this release, we’re also including evaluations for the next update, currently in development.
+
+How it works
+We trained these models to spend more time thinking through problems before they respond, much like a person would. Through training, they learn to refine their thinking process, try different strategies, and recognize their mistakes. 
+
+In our tests, the next model update performs similarly to PhD students on challenging benchmark tasks in physics, chemistry, and biology. We also found that it excels in math and coding. In a qualifying exam for the International Mathematics Olympiad (IMO), GPT-4o correctly solved only 13% of problems, while the reasoning model scored 83%. Their coding abilities were evaluated in contests and reached the 89th percentile in Codeforces competitions. You can read more about this in our technical research post.
+
+As an early model, it doesn't yet have many of the features that make ChatGPT useful, like browsing the web for information and uploading files and images. For many common cases GPT-4o will be more capable in the near term.
+
+But for complex reasoning tasks this is a significant advancement and represents a new level of AI capability. Given this, we are resetting the counter back to 1 and naming this series OpenAI o1.
+
+Safety
+As part of developing these new models, we have come up with a new safety training approach that harnesses their reasoning capabilities to make them adhere to safety and alignment guidelines. By being able to reason about our safety rules in context, it can apply them more effectively. 
+
+One way we measure safety is by testing how well our model continues to follow its safety rules if a user tries to bypass them (known as "jailbreaking"). On one of our hardest jailbreaking tests, GPT-4o scored 22 (on a scale of 0-100) while our o1-preview model scored 84. You can read more about this in the system card and our research post.
+
+To match the new capabilities of these models, we’ve bolstered our safety work, internal governance, and federal government collaboration. This includes rigorous testing and evaluations using our Preparedness Framework(opens in a new window), best-in-class red teaming, and board-level review processes, including by our Safety & Security Committee.
+
+To advance our commitment to AI safety, we recently formalized agreements with the U.S. and U.K. AI Safety Institutes. We've begun operationalizing these agreements, including granting the institutes early access to a research version of this model. This was an important first step in our partnership, helping to establish a process for research, evaluation, and testing of future models prior to and following their public release.
+
+Whom it’s for
+These enhanced reasoning capabilities may be particularly useful if you’re tackling complex problems in science, coding, math, and similar fields. For example, o1 can be used by healthcare researchers to annotate cell sequencing data, by physicists to generate complicated mathematical formulas needed for quantum optics, and by developers in all fields to build and execute multi-step workflows. 
+
+OpenAI o1-mini
+The o1 series excels at accurately generating and debugging complex code. To offer a more efficient solution for developers, we’re also releasing OpenAI o1-mini, a faster, cheaper reasoning model that is particularly effective at coding. As a smaller model, o1-mini is 80% cheaper than o1-preview, making it a powerful, cost-effective model for applications that require reasoning but not broad world knowledge. 
+
+How to use OpenAI o1
+ChatGPT Plus and Team users will be able to access o1 models in ChatGPT starting today. Both o1-preview and o1-mini can be selected manually in the model picker, and at launch, weekly rate limits will be 30 messages for o1-preview and 50 for o1-mini. We are working to increase those rates and enable ChatGPT to automatically choose the right model for a given prompt.
+
+Everything you should know about OpenAI o1 (formerly known as Strawberry)
+You might know it as Q* or Strawberry: the latest OpenAI LLM is here. This is everything you need to know.
+
+After months of speculation, OpenAI’s latest Strawberry LLM release has dropped – and it's not called GPT-5. 
+
+Previously referred to with cryptic, intriguing codenames like Q* and Strawberry, the latest model series has finally settled on the moniker OpenAI o1.
+
+The biggest update with OpenAI's new model is its enhanced reasoning skills. OpenAI explained that o1 has been trained to spend more time thinking than previous models, bringing it closer to human intelligence.
+
+What is OpenAI o1?
+OpenAI o1 is the latest series of large language models released by OpenAI on September 12, 2024, currently comprising two models: o1-preview and the o1-mini.
+
+The biggest difference between o1 and the company's previous models is its advanced reasoning. While it’s not yet released in full, the preview and mini models already blow GPT-4o out of the water on tests of math, science, and coding.
+
+OpenAI o1 models
+The September release included two models, the o1-preview and the o1-mini. They're the first of a series of models that will continue to be released as OpenAI refines their new LLM.
+
+The difference? The o1-mini model is smaller and 80% cheaper than the preview model. It’s built for tasks that require advanced reasoning, but not broader knowledge. It’s perfectly suited for tasks that involve coding or mathematics.
+
+How smart is OpenAI o1?
+OpenAI has touted a list of STEM benchmarks that show off o1’s reasoning abilities, including:
+
+A similar performance to PhD students in benchmark tests on physics, chemistry, and biology.
+Placing in the top 500 students in the US qualifier for the USA Math Olympiad.
+Ranking in the 89th percentile in Codeforces, a competitive coding test.
+You can read more about o1's reasoning abilities in OpenAI's research release.
+
+What is chain of thought reasoning?
+The o1 models use chain of thought reasoning, a longer and more thorough way of breaking down requests.
+
+If the o1 model is given a prompt, it won’t answer immediately - hence the long wait time. Instead, it will reason through each of the steps, carefully considering each piece of information and its implications before deciding on the next course of action. It won't provide an answer until it has thought through the entire series of steps required in the ask.
+
+How is o1 different from GPT-4o?
+1) Reasoning abilities
+At the center of its general intelligence is o1’s new ability to reason. “Maybe the most important areas of progress will be around reasoning ability,” Altman shared with Gates. “Right now, GPT-4 can reason in only extremely limited ways.”
+
+Reasoning is notoriously difficult. Even for humans. And OpenAI o1 is the first model to claim it.
+
+The o1 models are able to reason in real time, rather than rely on pre-training data. This is why the new model is better at science, math, and coding tasks than previous OpenAI models.
+
+2) Harder to jailbreak
+With safety concerns on the rise as LLMs grow in popularity and power, security has been a key focus of OpenAI’s latest development. The company partnered with the U.S. and U.K. AI Safety Institutes while developing the o1 series, as well as worked with the American government to establish their due diligence.
+
+As a major step forward, the o1 series is far harder to jailbreak – bypass safety measures – than previous models. 
+
+On one of their hardest jailbreaking tests, o1-preview model scored 84 out of 100, compared to a dismal 22 score from GPT-4o.
+
+3) New naming convention
+While its name isn't the most exciting thing about the new OpenAI LLM, it is an intentionally meaningful change.
+
+OpenAI o1 is the first model to cast off the 'GPT' moniker, and that's because the company claims it's the first phase of a brand new 'reasoning paradigm', whereas the older models were part of a 'pre-training paradigm'.
+
+The new model spends time reasoning in real time, rather than relying on its pre-training data.
+
+4) Better at STEM problem-solving tasks
+With better reasoning comes better math skills. 
+
+Both o1 and GPT-4o were asked to complete a qualifying exam for the International Mathematics Olympiad. GPT-4o solved 13% of problems, while o1 solved 83%.
+
+5) Longer wait time
+Reasoning in real time takes longer than referencing training data and generating a response. If you ask a question to OpenAI o1-preview compared to other models, you'll be waiting significantly longer.
+
+However, with the ability to outsource reasoning, it's a small price to pay. The speed of the o1 models will likely improve as the next models in the series are released.
+
+Who can use o1?
+As of September 12, ChatGPT Plus and Team users are able to access o1 models in ChatGPT. 
+
+OpenAI announced that they’ll make o1-mini available to free users, although no date has been pinpointed. 
+
+The current weekly rate limits are 30 messages for 01-preview and 50 for o1-mini, though they will soon increase.
+
+What should I use o1 for?
+The enhanced reasoning capabilities of o1 are especially useful for solving complex problems in math, science, and coding. As OpenAI explains:
+
+“o1 can be used by healthcare researchers to annotate cell sequencing data, by physicists to generate complicated mathematical formulas needed for quantum optics, and by developers in all fields to build and execute multi-step workflows.”
+
+Limitations of OpenAI o1
+As a preview, this model doesn’t yet have all the capabilities of GPT-4o. If you’re looking to use an LLM to browse the web for information, or you want to upload files or images, you’ll need to stick to GPT-4o until later models of o1 are released. 
+
+How to prompt OpenAI o1
+OpenAI’s prompting suggestions have changed for o1 compared to their previous models, due to its enhanced reasoning.
+
+Keep your prompts simple. It’s a smart model, and doesn’t need as much guidance as the GPT-4 series. That means avoid any chain of thought input – the model is already reasoning internally.
+
+Build GPT-powered AI agents
+What if your AI agent automatically synchronized with every OpenAI update?
+
+Botpress is a completely open and extendable AI agent platform. Our stack allows developers to build chatbots and AI agents with any capabilities, across any workflow. 
+
+The only platform that ranges from low code set-up to endless customizability and extendability, Botpress allows you to automatically get the power of the latest GPT version on your chatbot – no effort required.

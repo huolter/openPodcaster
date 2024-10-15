@@ -52,7 +52,9 @@ def generate_podcast_script(context: str) -> dict:
         model="gpt-4o",
         response_format="json",
         messages=[
-            {"role": "system", "content": "You are a helpful podcast-style script generator."},
+            {"role": "system", "content": "You are a helpful podcast-style script generator.\
+            The answer should be a json object with the structure {'1':{'alpha':'bla bla bla'}, '2':{'beta':'bla bla'}, ... } \
+            each turn one dictionary with one podcaster"},
             {"role": "user", "content": instructions}
         ]
     )

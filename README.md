@@ -1,6 +1,9 @@
 # openPodcaster
 Generate podcast scripts and audio using AI-powered dialogue generation and text-to-speech technology.
 
+-This is a quick experiment, if you change voices or other parameters you may need to fix some other parts of the script / WIP
+-To Do: voices/personalities easy configuration
+
 ## Features
 
 - Context-driven script generation

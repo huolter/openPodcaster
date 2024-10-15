@@ -33,10 +33,10 @@ For complete control of the style, narrative and voices, edit the variable "inst
 By default, instructions is:
 
 ```python
-instructions = f"write a script for a 2 presenters podcast. \
-     One of the podcasters is called Alpha, the other is Beta. \
+instructions = f"Write a script for a 2 presenters podcast.\
+     One of the podcasters is called Alpha, the other is Beta.\
      Alpha is inquisitorial, makes questions and wants to know more.\
-     Beta is patient and structured and offers a clear perspective. \
+     Beta is patient and structured and offers a clear perspective.\
      Consider that the text generated will be used to generate speech,\
      avoid symbols or long lists. Focus on a more narrative style.\
      Here is the context: \

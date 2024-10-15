@@ -5,6 +5,10 @@
 # openPodcaster
 Generate podcast scripts and audio using AI-powered dialogue generation and text-to-speech technology.
 
+## Example
+
+- Check for a generated output here https://github.com/huolter/openPodcaster/blob/main/example/combined_audio.mp3
+
 ## Features
 
 - Context-driven script generation

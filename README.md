@@ -18,13 +18,36 @@ Generate podcast scripts and audio using AI-powered dialogue generation and text
 5. Add context files to `context/` folder
 6. Run: `python podcast_generator.py`
 
-## Requirements
-
-- Python 3.7+
-- OpenAI API key
-- FFmpeg
-
 ## Usage
 
 Place `.txt` files with context in the `context/` folder, then run the script. Output will be in `audio_files/` with the final podcast as `combined_podcast.mp3`.
+
+## Control
+
+For complete control of the style, narrative and voices, edit the variable "instructions". 
+
+By default, instructions is:
+
+```python
+instructions = f"write a script for a 2 presenters podcast. \
+     One of the podcasters is called Alpha, the other is Beta. \
+     Alpha is inquisitorial, makes questions and wants to know more.\
+     Beta is patient and structured and offers a clear perspective. \
+     Consider that the text generated will be used to generate speech,\
+     avoid symbols or long lists. Focus on a more narrative style.\
+     Here is the context: \
+    <CONTEXT>\
+            {context}\
+    </CONTEXT>"
+```
+## Example
+
+See the examples/ folder for audio_files, context and combined_audio example.
+
+## Requirements
+
+- OpenAI API key
+- FFmpeg (https://www.ffmpeg.org/)
+
+
 

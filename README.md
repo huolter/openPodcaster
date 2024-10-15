@@ -1,5 +1,6 @@
 - This is a quick experiment, if you change voices or other parameters you may need to fix some other parts of the script
 - To Do: voices/personalities easy configuration
+- To Do: robust structured output
 
 # openPodcaster
 Generate podcast scripts and audio using AI-powered dialogue generation and text-to-speech technology.
